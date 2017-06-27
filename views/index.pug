@@ -1,0 +1,21 @@
+html
+    head
+        title= title
+    body
+        h1= message
+
+        form(method="POST", action="/upload", enctype="multipart/form-data")
+
+            label Choose a file to upload
+            br
+            br
+
+            input(
+                id="upload-file",
+                type="file",
+                name="myfile",
+                multiple="multiple"
+            )
+
+            button(type="submit") Upload Files
+
